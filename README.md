@@ -1,4 +1,4 @@
-go-js.org
-=========
+gojs.org
+========
 
-[Grupo de Usuários Javascript de Goiás](http://go-js.org) (Goiás' Javascript User Group) website repository.
+[Grupo de Usuários Javascript de Goiás](http://gojs.org) (Goiás' Javascript User Group) website repository.
