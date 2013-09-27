@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<%- @partial("section/about.html.eco", @) %>
+
+<% if false : %>
+    <% for section in @sections : %>
+      <!-- <%= section.toUpperCase() %> -->
+
+      <section class="<%= section %>" id="<%= section %>">
+        <%- @partial("section/#{section}.html.eco", @) %>
+      </section>
+
+      <!-- / <%= section.toUpperCase() %> -->
+    <% end %>
+<% end %>
