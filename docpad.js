@@ -178,11 +178,23 @@ module.exports = {
 
     // List of Partners
     partners: [
-      {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
-      }
+        {
+            name: "BrazilJS",
+            logo: "themes/gojs.org/img/partner_braziljs.png",
+            url: "http://braziljs.org"
+        }, {
+            name: "FGSL",
+            logo: "themes/gojs.org/img/partner_fgsl.jpg",
+            url: "http://fgsl.aslgo.org.br/fgsl/"
+        }, {
+            name: "ASL",
+            logo: "themes/gojs.org/img/partner_asl.png",
+            url: "http://aslgo.org.br/"
+        }, {
+            name: "Grão JS",
+            logo: "themes/gojs.org/img/partner_graojs.png",
+            url: "https://github.com/synackbr/graojs"
+        }
     ],
 
     // Theme path
