@@ -10,7 +10,7 @@
     <h1 class="logo-name">
       <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
     </h1>
-    <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
+    <h2 class="tagline">Goiás - Brasil</h2>
 
     <% if @conf.price || @callToAction: %>
       <div class="call-action-area">

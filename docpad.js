@@ -32,7 +32,7 @@ module.exports = {
 
     // Site info
     site: {
-      theme: "yellow-swan",
+      theme: "gojs.org",
       url: "http://gojs.org",
       googleanalytics: "UA-44629992-1"
     },
