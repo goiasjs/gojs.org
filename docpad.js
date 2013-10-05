@@ -9,7 +9,7 @@ module.exports = {
     conf: {
       name: "GO JS",
       description: "Grupos de Usuários Javascript de Goiás",
-      date: "November 15",
+      // date: "November 15",
       // If your event is free, just comment this line
       // price: "$100",
       // venue: "Coco Bongo",
@@ -26,9 +26,9 @@ module.exports = {
     // },
 
     // "Fork me on GitHub", if you don't want this, just remove the forkButton property
-    // forkButton: {
-    //     repository: "https://github.com/braziljs/conf-boilerplate"
-    // },
+    forkButton: {
+        repository: "https://github.com/goiasjs/goiasjs.org"
+    },
 
     // Site info
     site: {

@@ -31,10 +31,8 @@
 
   <div class="global">
 
-    <% if false: %>
-        <%-@partial('nav.html.eco', @)%>
-        <%-@partial('header.html.eco', @)%>
-    <% end %>
+    <%-@partial('nav.html.eco', @)%>
+    <%-@partial('header.html.eco', @)%>
 
     <!-- CONTENT -->
     <div class="content" id="content">
