@@ -185,7 +185,7 @@ module.exports = {
         }, {
             name: "FGSL",
             logo: "themes/gojs.org/img/partner_fgsl.jpg",
-            url: "http://fgsl.aslgo.org.br/fgsl/"
+            url: "http://www.fgsl.com.br"
         }, {
             name: "ASL",
             logo: "themes/gojs.org/img/partner_asl.png",
