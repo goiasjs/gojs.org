@@ -9,6 +9,7 @@ module.exports = {
     conf: {
       name: "GO JS",
       description: "Grupos de Usuários Javascript de Goiás",
+      logo: "themes/gojs.org/img/logo_gojs.png",
       // date: "November 15",
       // If your event is free, just comment this line
       // price: "$100",
@@ -17,7 +18,7 @@ module.exports = {
       // city: "Cancún",
       state: "Goiás"
     },
-
+    
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
     // callToAction: {
@@ -194,6 +195,10 @@ module.exports = {
             name: "Grão JS",
             logo: "themes/gojs.org/img/partner_graojs.png",
             url: "https://github.com/synackbr/graojs"
+        }, {
+            name: "Vision TI",
+            logo: "themes/gojs.org/img/partner_visionti.png",
+            url: "http://www.vision-ti.com.br"
         }
     ],
 
