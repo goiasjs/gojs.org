@@ -10,15 +10,15 @@ module.exports = {
       name: "GO JS",
       description: "Grupos de Usuários Javascript de Goiás",
       logo: "themes/gojs.org/img/logo_gojs.png",
-      // date: "November 15",
+      date: "2014-03-29 15:00",
       // If your event is free, just comment this line
-      // price: "$100",
-      // venue: "Coco Bongo",
-      // address: "Boulevard Kukulcan, 30",
-      // city: "Cancún",
-      state: "Goiás"
+      // price: "Em breve",
+      venue: "Salão de festas do Edifício Itaipu",
+      address: "Avenida República do Líbano, 1135 - Setor Aeroporto",
+      city: "Goiânia",
+      state: "Goiás "
     },
-    
+
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
     // callToAction: {
@@ -27,9 +27,9 @@ module.exports = {
     // },
 
     // "Fork me on GitHub", if you don't want this, just remove the forkButton property
-    forkButton: {
-        repository: "https://github.com/goiasjs/goiasjs.org"
-    },
+    // forkButton: {
+    //     repository: "https://github.com/goiasjs/goiasjs.org"
+    // },
 
     // Site info
     site: {
@@ -43,10 +43,10 @@ module.exports = {
     // you can also change order here and it will reflect on page
     sections: [
       'about',
-      // 'location',
-      // 'speakers',
-      // 'schedule',
-      // 'sponsors',
+      'location',
+      'speakers',
+      'schedule',
+      'sponsors',
       'partners'
       // 'contact'
     ],
@@ -54,118 +54,84 @@ module.exports = {
     // Labels which you can translate to other languages
     labels: {
       about: "Quem somos",
-      // location: "Location",
-      // speakers: "Speakers",
-      // schedule: "Schedule",
-      // sponsors: "Sponsors",
+      location: "Local",
+      speakers: "Palestrantes",
+      schedule: "Cronograma",
+      sponsors: "Patrocinadores",
       partners: "Parceiros",
       // contact: "Contact"
     },
 
     // The entire schedule
     schedule: [
-    //   {
-    //     name: "Check-in / Breakfast",
-    //     time: "9h00"
-    //   },
-    //   {
-    //     name: "Linus Torvalds",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Linux Foundation",
-    //     link: {
-    //       href: "http://twitter.com/linus",
-    //       text: "@linus"
-    //     },
-    //     presentation: {
-    //       title: "Digging into a Linux Kernel",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "10h00"
-    //     }
-    //   },
-    //   {
-    //     name: "Bill Gates",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Microsoft",
-    //     link: {
-    //       href: "http://github.com/billy95",
-    //       text: "@billy95"
-    //     },
-    //     presentation: {
-    //       title: "Introducing Windows 12",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "11h00"
-    //     }
-    //   },
-    //   {
-    //     name: "Lunch",
-    //     time: "12h00"
-    //   },
-    //   {
-    //     name: "Chuck Norris",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Delta Command",
-    //     link: {
-    //       href: "http://twitter.com/littlechuck",
-    //       text: "@littlechuck"
-    //     },
-    //     presentation: {
-    //       title: "How to kill a elephant with one finger",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "13h00"
-    //     }
-    //   },
-    //   {
-    //     name: "Steve Jobs",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Apple, Inc.",
-    //     link: {
-    //       href: "http://github.com/stevie",
-    //       text: "@stevie"
-    //     },
-    //     presentation: {
-    //       title: "Presenting iPad",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "14h00"
-    //     }
-    //   },
-    //   {
-    //     name: "Coffee-break",
-    //     time: "15h00"
-    //   },
-    //   {
-    //     name: "Mark Zuckerberg",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Facebook",
-    //     link: {
-    //       href: "http://twitter.com/zuck",
-    //       text: "@zuck"
-    //     },
-    //     presentation: {
-    //       title: "Revealing Facebook Secrets",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "16h00"
-    //     }
-    //   },
-    //   {
-    //     name: "Steve Wozniak",
-    //     photo: "themes/yellow-swan/img/speaker.jpg",
-    //     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //     company: "Apple, Inc.",
-    //     link: {
-    //       href: "http://twitter.com/woz",
-    //       text: "@woz"
-    //     },
-    //     presentation: {
-    //       title: "Why do I prefer Android over iPhone",
-    //       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-    //       time: "17h00"
-    //     }
-    //   }
+      {
+        name: "Boas vindas",
+        time: "15h00"
+      },
+      {
+        name: "Pedro Nasser",
+        photo: "themes/yellow-swan/img/speaker.jpg",
+        // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+        // company: "Linux Foundation",
+        link: {
+          href: "http://twitter.com/pedroNCS",
+          text: "@pedroNCS"
+        },
+        presentation: {
+          title: "Prototype",
+          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          time: "15h15"
+        }
+      },
+      {
+        name: "Edygar de Lima",
+        photo: "themes/yellow-swan/img/speaker.jpg",
+        // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+        // company: "Microsoft",
+        link: {
+          href: "http://twitter.com/edygarDeLima",
+          text: "@edygarDeLima"
+        },
+        presentation: {
+          title: "Eventos / Sinais / Mensagens",
+          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          time: "15h45"
+        }
+      },
+      {
+        name: "Coffee-break",
+        time: "16h15"
+      },
+      {
+        name: "Luiz Gonzaga dos Santos Filho",
+        photo: "http://luiz.in/c/xing.jpg",
+        bio: "JS learner and lover",
+        company: "Vega Sistemas",
+        link: {
+          href: "http://twitter.com/luizmarelo",
+          text: "@luizmarelo"
+        },
+        presentation: {
+          title: "Promessas",
+          description: "Introdução à nova funcionalidade da ES6: promessas. Pressupõe-se conhecimento básico de callbacks.",
+          time: "16h45"
+        }
+      },
+      {
+        name: "Kássio Maia",
+        photo: "themes/yellow-swan/img/speaker.jpg",
+        // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+        // company: "Apple, Inc.",
+        link: {
+          href: "http://twitter.com/kassiomaia",
+          text: "@kassiomaia"
+        },
+        presentation: {
+          title: "Design Patterns com Javascript",
+          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          time: "17h15"
+        }
+      }
     ],
 
     // List of Sponsors
@@ -195,10 +161,10 @@ module.exports = {
             name: "Grão JS",
             logo: "themes/gojs.org/img/partner_graojs.png",
             url: "https://github.com/synackbr/graojs"
-        }, {
-            name: "Vision TI",
-            logo: "themes/gojs.org/img/partner_visionti.png",
-            url: "http://www.vision-ti.com.br"
+        // }, {
+        //     name: "Vision TI",
+        //     logo: "themes/gojs.org/img/partner_visionti.png",
+        //     url: "http://www.vision-ti.com.br"
         }
     ],
 
