@@ -47,8 +47,8 @@ module.exports = {
       'speakers',
       'schedule',
       'sponsors',
-      'partners'
-      // 'contact'
+      'partners',
+      'contact'
     ],
 
     // Labels which you can translate to other languages
@@ -59,7 +59,7 @@ module.exports = {
       schedule: "Cronograma",
       sponsors: "Patrocinadores",
       partners: "Parceiros",
-      // contact: "Contact"
+      contact: "Contato"
     },
 
     // The entire schedule
