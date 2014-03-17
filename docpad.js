@@ -79,8 +79,7 @@ module.exports = {
         },
         presentation: {
           title: "Prototype, é sempre bom?",
-          description: "Prós, contras e alternativas para as mais diversas situações"
-          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          description: "Prós, contras e alternativas para as mais diversas situações",
           time: "15h15"
         }
       },
