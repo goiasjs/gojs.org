@@ -113,7 +113,7 @@ module.exports = {
         },
         presentation: {
           title: "Promessas",
-          description: "Introdução à nova funcionalidade da ES6: promessas. Pressupõe-se conhecimento básico de callbacks.",
+          description: "Introdução à nova funcionalidade da ES6: promessas. Sugere-se conhecimento prévio de callbacks e bibliotecas de controle de fluxo, como a async.",
           time: "16h45"
         }
       },
