@@ -1,10 +1,17 @@
-<h2 class="section-title">Grupo de Usuários Javascript de Goiás</h2>
-<p itemprop="description"></p>
-
-<p>Estamos construindo nosso site. Sinta-se livre para nos ajudar. Entre na nossa lista de discussão ou faça um Pull Request no <a href="https://github.com/goiasjs/gojs.org">nosso GitHub</a></p>
-
-<p><a href="http://gojs.org/" target="_blank">http://gojs.org/</a></p>
-<p><a href="https://groups.google.com/forum/#!forum/gojs" target="_blank">https://groups.google.com/forum/#!forum/gojs</a></p>
-<p><a href="https://www.facebook.com/groups/goiasjs/" tareget="_blank">https://www.facebook.com/groups/goiasjs/</a></p>
-<p><a href="https://github.com/goiasjs" target="_blank">https://github.com/goiasjs</a></p>
-<p><a href="https://twitter.com/goiasjs" target="_blank">https://twitter.com/goiasjs</a></p>
+<h2 class="section-title">Bem vindos ao nosso 1º workshop!</h2>
+<p>
+    <strong>Data:</strong> <span><%= @conf.date %></span><br />
+    <strong>Preço:</strong> R$ 12 (paypal / cartão de crédito) / R$ 10 (depósito bancário).<br />
+    <strong>Apoio:</strong> Node.js Goiás / MeuBilhete.com
+</p>
+<p>
+    <strong>Inscrições</strong>:<br />
+    &bullet; Para Paypal / cartão de crédito <a href="https://meubilhete.com/workshopgojs">clique aqui</a>.<br />
+    &bullet; Optando pelo depósito você precisará enviar um email de confirmação com o comprovante de depósito/transferência e aguardar a confirmação de inscrição:<br />
+    <p>
+        <strong>Dados para depósito / transferência</strong>:<br />
+        Banco Itaú: agência 3277, c/c: 18823-5 (Luiz Gonzaga dos Santos Filho)<br />
+        Valor: R$ 10<br />
+        Email para enviar comprovante: lfilho@gmail.com
+    </p>
+</p>
