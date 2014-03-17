@@ -71,14 +71,15 @@ module.exports = {
       {
         name: "Pedro Nasser",
         photo: "themes/yellow-swan/img/speaker.jpg",
-        // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        // company: "Linux Foundation",
+        bio: "Javascript and Node.JS developer",
+        company: "YEPT",
         link: {
           href: "http://twitter.com/pedroNCS",
           text: "@pedroNCS"
         },
         presentation: {
-          title: "Prototype",
+          title: "Prototype, é sempre bom?",
+          description: "Prós, contras e alternativas para as mais diversas situações"
           // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
           time: "15h15"
         }
