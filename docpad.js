@@ -7,12 +7,12 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "GO JS",
+      name: "1º Workshop",
       description: "Grupos de Usuários Javascript de Goiás",
       logo: "themes/gojs.org/img/logo_gojs.png",
       date: "2014-03-29 15:00",
       // If your event is free, just comment this line
-      // price: "Em breve",
+      // price: "R$ 12",
       venue: "Salão de festas do Edifício Itaipu",
       address: "Avenida República do Líbano, 1135 - Setor Aeroporto",
       city: "Goiânia",
@@ -21,10 +21,10 @@ module.exports = {
 
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
-    // callToAction: {
-    //     text: "Register now!",
-    //     link: "http://eventick.com.br"
-    // },
+    callToAction: {
+        text: "Inscreva-se agora!",
+        link: "https://meubilhete.com/workshopgojs"
+    },
 
     // "Fork me on GitHub", if you don't want this, just remove the forkButton property
     // forkButton: {
@@ -136,11 +136,11 @@ module.exports = {
 
     // List of Sponsors
     sponsors: [
-    //   {
-    //     name: "Eventick",
-    //     logo: "themes/yellow-swan/img/sponsor.png",
-    //     url: "http://eventick.com.br"
-    //   }
+      // {
+      //   name: "Seja um patrocinador",
+      //   logo: "themes/yellow-swan/img/your-logo.png",
+      //   url: ""
+      // }
     ],
 
     // List of Partners
