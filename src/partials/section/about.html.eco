@@ -1,19 +1,17 @@
-<h2 class="section-title">Bem vindos!</h2>
-<p itemprop="description">Ao nosso primeiro workshop de Javascript!</p>
+<h2 class="section-title">Bem vindos ao nosso 1º workshop!</h2>
 <p>
     <strong>Data:</strong> <span><%= @conf.date %></span><br />
     <strong>Preço:</strong> R$ 12 (paypal / cartão de crédito) / R$ 10 (depósito bancário).<br />
-    <strong>Realização:</strong> GOJS.<br />
     <strong>Apoio:</strong> Node.js Goiás / MeuBilhete.com
 </p>
 <p>
-<strong>Inscrições</strong>:<br />
+    <strong>Inscrições</strong>:
     <p>Para Paypal / cartão de crédito <a href="https://meubilhete.com/workshopgojs">clique aqui</a>.</p>
     <p>
         Optando pelo depósito você precisará enviar um email de confirmação com o comprovante de depósito/transferência e aguardar a confirmação de inscrição.
     </p>
     <p>
-        Dados para depósito/transferência:<br />
+        <strong>Dados para depósito / transferência</strong>:<br />
         Banco Itaú: agência 3277, c/c: 18823-5 (Luiz Gonzaga dos Santos Filho)<br />
         Valor: R$ 10<br />
         Email para enviar comprovante: lfilho@gmail.com
