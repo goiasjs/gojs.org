@@ -85,16 +85,16 @@ module.exports = {
       },
       {
         name: "Edygar de Lima",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        // company: "Microsoft",
+        photo: "https://lh6.googleusercontent.com/-Nq6gfd_42mk/UjiPa04726I/AAAAAAAAAl0/qx4R1n8-1aw/s577-no/_IGO0941.JPG",
+        bio: "Internet Geek, web learner, javascript lover",
+        company: "AFIPE",
         link: {
           href: "http://twitter.com/edygarDeLima",
           text: "@edygarDeLima"
         },
         presentation: {
           title: "Eventos / Sinais / Mensagens",
-          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          description: "Observer Pattern em detalhes, observando seus casos de uso, aplicações e semântica. Requisitos mínimos: Mente aberta, vontade de aprender e abertura para dicussões.",
           time: "15h45"
         }
       },
