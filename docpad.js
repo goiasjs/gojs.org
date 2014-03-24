@@ -99,7 +99,7 @@ module.exports = {
         }
       },
       {
-        name: "Coffee-break",
+        name: "Coffee-break (incluso!)",
         time: "16h15"
       },
       {
