@@ -1,8 +1,11 @@
-<h2 class="section-title">Bem vindos ao nosso 1º workshop!</h2>
+<h2 class="section-title">Bem vindos ao 1º workshop GOJS!</h2>
 <p>
     <strong>Data:</strong> <span><%= @conf.date %></span><br />
-    <strong>Preço:</strong> R$ 12 (paypal / cartão de crédito) / R$ 10 (depósito bancário).<br />
+    <strong>Preço:</strong> R$ 12 (paypal / cartão de crédito) / R$ 10 (depósito bancário). -- Coffe-break incluso.<br />
     <strong>Apoio:</strong> Node.js Goiás / MeuBilhete.com
+</p>
+<p>
+    <strong>Sorteio de dois ingressos para o <a href="http://joincommunity.com.br">joincommunity.com.br</a>!!!!</strong>
 </p>
 <p>
     <strong>Inscrições</strong>:<br />
