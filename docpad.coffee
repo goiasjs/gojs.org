@@ -12,33 +12,33 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://website.com"
+			url: "http://gojs.org"
 
 			# Here are some old site urls that you would like to redirect from
-			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
-			]
+			# oldUrls: [
+			# 	'www.website.com',
+			# 	'website.herokuapp.com'
+			# ]
 
 			# The default title of our website
-			title: "Acme"
-			company: "Acme Inc."
+			title: "GOJS - Home"
+			company: "GOJS - Grupo de Usuários Javascript de Goiás"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Fomentando o Javascript moderno no estado de Goiás.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				javascript, node, js, ecmascript, goiás
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Luiz Gonzaga dos Santos Filho"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "lfilho@gmail.com"
 
 			# Styles
 			styles: [
@@ -51,8 +51,6 @@ docpadConfig = {
 			scripts: [
 				"/scripts/app.js"
 			]
-
-
 
 		# -----------------------------
 		# Helper Functions
@@ -106,7 +104,7 @@ docpadConfig = {
 	# Plugins
 
 	plugins:
-		nodesass: 
+		nodesass:
 			bourbon: true
 		grunt:
       		gruntTasks: ["uglify"]
@@ -140,7 +138,6 @@ docpadConfig = {
 					next()
 
 }
-
 
 # Export our DocPad Configuration
 module.exports = docpadConfig
