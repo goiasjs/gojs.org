@@ -1,43 +1,39 @@
 {
-  "name": "zurb-foundation.docpad",
-  "version": "0.1.0",
-  "description": "Zurb Foundation skeleton for DocPad.",
-  "homepage": "https://github.com/Clearskyabove/zurb-foundation.docpad",
+  "name": "GOJS",
+  "version": "1.1.0",
+  "description": "GOJS - Grupo de Usuários Javascript de Goiás",
+  "homepage": "https:/gojs.org",
   "keywords": [
-    "docpad-skeleton",
-    "docpad",
-    "website",
-    "bootstrap",
-    "zurb foundation"
+    "javascript",
+    "js",
+    "node",
+    "goiás"
   ],
-  "author": "Clearskyabove <us@clearskyabove.com> (http://clearskyabove.com)",
-  "maintainers": [
-    "Geert-Jan Brits <geertjan@clearksyabove.com> (https://github.com/gbrits)"
-  ],
+  "author": "Luiz Gonzaga dos Santos Filho (http://luiz.in)",
   "bugs": {
-    "url": "https://github.com/Clearskyabove/zurb-foundation.docpad/issues"
+    "url": "https://github.com/goiasjs/gojs.org/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Clearskyabove/zurb-foundation.docpad.git"
+    "url": "https://github.com/goiasjs/gojs.org/issues"
   },
   "engines": {
     "node": "0.10",
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "^6.66.0",
-    "docpad-plugin-cleanurls": "^2.7.0",
-    "docpad-plugin-coffeescript": "^2.4.0",
-    "docpad-plugin-eco": "^2.0.3",
-    "docpad-plugin-ghpages": "^2.4.3",
-    "docpad-plugin-grunt": "^2.1.1",
-    "docpad-plugin-highlightjs": "^2.2.1",
-    "docpad-plugin-marked": "^2.2.1",
-    "docpad-plugin-nodesass": "^2.3.0",
-    "docpad-plugin-partials": "^2.9.1",
-    "docpad-plugin-related": "^2.2.2",
-    "docpad-plugin-text": "^2.3.2",
+    "docpad": "~6.66.0",
+    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-coffeescript": "~2.4.0",
+    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-grunt": "~2.1.1",
+    "docpad-plugin-highlightjs": "~2.2.1",
+    "docpad-plugin-marked": "~2.2.1",
+    "docpad-plugin-nodesass": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.1",
+    "docpad-plugin-related": "~2.2.2",
+    "docpad-plugin-text": "~2.3.2",
     "foundation": "~4.2.1-1",
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.11",
@@ -45,7 +41,7 @@
     "safeps": "~2.2.6"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "^2.6.0"
+    "docpad-plugin-livereload": "~2.6.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
