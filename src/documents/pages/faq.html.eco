@@ -1,10 +1,10 @@
 ```
-title: Got a question?
-subtitle: We've got some answers.
+title: Dúvidas?
+subtitle: Respostas!
 layout: page
 
 pageOrder: 2
-includenInNavs: []
+includenInNavs: ['main']
 navtitle: FAQ
 ```
 
