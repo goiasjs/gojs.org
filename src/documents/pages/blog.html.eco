@@ -2,7 +2,7 @@
 title: Blog
 layout: page
 
-pageOrder: 3
+pageOrder: 4
 includenInNavs: ['main']
 navtitle: Blog
 ---

@@ -3,18 +3,14 @@ layout: default
 ---
 
 <article id="page" class="page">
-	
-
-
 	<div class="row">
 		<div class="columns faqpost-content">
 
 			<h1><%= @document.title %></h1>
-			
 
 			<%- @content %>
 			<p>
-				<a href="/pages/faq">&#171; Back to all questions </a>
+				<a href="/pages/faq">&#171; Voltar à todas as perguntas</a>
 			</p>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8" />
@@ -32,7 +32,7 @@
 	<!--[if lt IE 9]>
 		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<!-- Styles -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
@@ -46,7 +46,7 @@
 	            <h1><a href="/"> <%= @site.title %></a></h1>
 	          </li>
 	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	        </ul>  
+	        </ul>
 	        <section class="top-bar-section">
 	          <ul class="right">
 	          	<% for document in @getCollection('dcoumentsInMainNav').toJSON(): %>
@@ -65,16 +65,16 @@
 	</div>
 	<footer id='footer' class="panel">
 		<div class="row">
-			<div class="columns large-5 small-12">
+			<div class="columns large-6 small-12">
 			&copy; <%= @site.company %> <%- (new Date()).getFullYear() %>
 			</div>
-			<div class="columns large-7 small-12 ">
+			<div class="columns large-6 small-12">
 				<ul class="inline-list foot-right">
 		          	<% for document in @getCollection('pages').toJSON(): %>
 		          	<li class="divider hide-for-small"></li>
-						<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-							<a href="<%= document.url %>" property="dc:title"><%= document.navtitle %></a>
-						</li>
+                    <li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
+                        <a href="<%= document.url %>" property="dc:title"><%= document.navtitle %></a>
+                    </li>
 					<% end %>
 		        </ul>
 			</div>
@@ -82,13 +82,13 @@
 	</footer>
 	<!-- Scripts -->
 
-	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
-		As configured (see grunt-config.json) this includes: 
-		 - modernizr, 
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack.
+		As configured (see grunt-config.json) this includes:
+		 - modernizr,
 		 - zepto OR jquery
 		 - foundation.topbar.js
 
-		condition jquery or zepto adapted from: 
+		condition jquery or zepto adapted from:
 		http://foundation.zurb.com/docs/javascript.html
 	-->
 	<script>
@@ -97,7 +97,7 @@
 	    + '-pack.min.js><\/script>');
 	</script>
 	<script>
-		//init all foundation plugins. 
+		//init all foundation plugins.
 		//Currently this only includes foundation.topbar.js
 		//See http://foundation.zurb.com/docs/javascript.html
 		$(document).foundation();

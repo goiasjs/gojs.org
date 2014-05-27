@@ -5,29 +5,29 @@
 @import "variables";
 @import "mixins.scss";
 
-//included in mixins.scss. Verbatim from Compass. 
+//included in mixins.scss. Verbatim from Compass.
 //See: http://compass-style.org/reference/compass/layout/sticky_footer/
-@include sticky-footer(6em, "#layout", "#layout_footer", "#footer");
+@include sticky-footer(auto, "#layout", "#layout_footer", "#footer");
 
 ////////////
 // LAYOUT
 #layout{
 	//makes sure body-height: 100% doesn't show vertical scrollbar when not needed
-	overflow: auto; 
+	overflow: auto;
 }
 
 ////////////
 //COMPONENTS
 
-$backCol: #13A3C7;
+$backCol: #3790ff;
 $backColDarkGrad: darken($backCol, 15%);
 $colDarken: darken($backCol, 20%);
 
 .container.top-bar {
-	
+
 	.top-bar-section{
 		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-		li a:not(.button):hover, li.active a:not(.button){ 
+		li a:not(.button):hover, li.active a:not(.button){
 			background: #222;
 		}
 	}
@@ -39,41 +39,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 header{
-	
+
 	padding: 1.5em 0;
 	background: $backCol;
 
 	&.tall{
 		padding: 4.5em 0;
-   		@include box-shadow(inset 0 -50px 100px $backColDarkGrad);
-   		
+   		@include box-shadow(inset 0 1px 10px $backColDarkGrad);
+        background-image: url('../img/cover.jpg');
+
    		@media #{$small} {
-			padding: 7.5em 0;
+			padding: 5.5em 0;
 			@include transition(all 0.2s ease-in-out);
    		}
 	}
-	h1{
-		margin: 0;
-		color: white;
-		@media #{$small} {
-			font-size: 54px;
-		}
-	}
-	h1 + h3{
-		margin: 0 !important;
-	}
-	h3, .amp{
-		margin: 0;
-		font-family: 'Maven Pro';
-		color: $colDarken;
-	}
-	a{
-		color: $colDarken;
-		&:hover{
-			color: $colDarken;
-			text-decoration: underline;
-		}
-	}
+    img {
+        margin: 0 auto;
+    }
 	margin-bottom: 2em;
 }
 
@@ -86,13 +68,17 @@ article{
 	margin: $marg 0;
 	> header:first-child{
 		margin-top: -$marg;
+        h1 {
+            color: white;
+        }
 	}
+
 }
 
 #footer {
 	padding-top: 1em;
-	color: lighten($backCol, 10%);
-	background: $backColDarkGrad;
+	color: white;
+	background: $backCol;
 
 	div, li{
 		line-height: 1.5em ;
@@ -117,9 +103,3 @@ article{
 .faqpost-content{
 	max-width: 45em;
 }
-
-
-
-
-
-

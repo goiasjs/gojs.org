@@ -1,0 +1,13 @@
+```
+title: Sobre a comunidade
+
+layout: page
+pageOrder: 1
+includenInNavs: ['main']
+navtitle: Sobre
+```
+
+<h2>Grupo de Usuários Javascript de Goiás</h2>
+<img src="../img/logo_gojs_azul.png" alt="Logo GOJS" />
+<%- @partial('sobre') %>
+
