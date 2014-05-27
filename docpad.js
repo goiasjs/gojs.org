@@ -119,16 +119,16 @@ module.exports = {
       },
       {
         name: "Kássio Maia",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/yellow-swan/img/speakers/kassio.jpg",
         // bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        // company: "Apple, Inc.",
+        company: "Ephrom.",
         link: {
           href: "http://twitter.com/kassiomaia",
           text: "@kassiomaia"
         },
         presentation: {
-          title: "Design Patterns com Javascript",
-          // description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+          title: "Design Patterns",
+          description: "Aplicando design patterns em projetos puramente javascript.",
           time: "17h15"
         }
       }
