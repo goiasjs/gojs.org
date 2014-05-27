@@ -7,7 +7,7 @@
 
 //included in mixins.scss. Verbatim from Compass.
 //See: http://compass-style.org/reference/compass/layout/sticky_footer/
-@include sticky-footer(auto, "#layout", "#layout_footer", "#footer");
+@include sticky-footer(4em, "#layout", "#layout_footer", "#footer");
 
 ////////////
 // LAYOUT
