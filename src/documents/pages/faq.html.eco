@@ -1,0 +1,17 @@
+```
+title: Got a question?
+subtitle: We've got some answers.
+layout: page
+
+pageOrder: 2
+includenInNavs: []
+navtitle: FAQ
+```
+
+<ul>
+	<% for document in @getCollection('faqs').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+		</li>
+	<% end %>
+</ul>

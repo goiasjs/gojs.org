@@ -3,8 +3,6 @@ gojs.org
 
 [Grupo de Usuários Javascript de Goiás](http://gojs.org) (Goiás' Javascript Users Group) website repository.
 
-Construído usando o BrazilJS [Conf Boilerplate](https://github.com/braziljs/conf-boilerplate/)
-
 # Instalação
 `./install` vai instalar o `docpad` pelo npm globalmente
 

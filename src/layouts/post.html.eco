@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article id="post" class="post">
+
+	<div class="row">
+		<div class="columns post-content">
+			<h1><%= @document.title %></h1>
+			<%- @content %>
+		</div>
+	</div>
+</article>
+
+
+<div class="row">
+
+
+	<% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
+	<section id="related" class="columns">
+		<h3>Related Posts</h3>
+		<nav class="linklist">
+			<% for document in @document.relatedDocuments: %>
+				<li><span><%= document.date.toDateString() %></span>
+				&raquo;
+				<a href="<%= document.url %>"><%= document.title %></a></li>
+			<% end %>
+		</nav>
+	</section>
+	<% end %>
+</div>

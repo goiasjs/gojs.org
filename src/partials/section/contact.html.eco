@@ -1,2 +1,0 @@
-<h2 class="section-title"><%= @labels['contact'] %></h2>
-<p>Luiz Gonzaga - lfilho@gmail.com - 99281310</p>

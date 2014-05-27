@@ -1,76 +1,107 @@
-<!doctype html>
-<html itemscope itemtype="http://schema.org/Event">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <title itemprop="name"><%= @conf.name %></title>
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <meta charset="utf-8">
-  <meta name="author" content="<%= @conf.name %>">
-  <meta name="description" content="<%= @conf.description %>">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Our site title and description -->
+	<title><%= @getPreparedTitle() %></title>
+	<meta name="description" content="<%= @getPreparedDescription() %>" />
+	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+	<meta name="author" content="<%= @site.author or '' %>" />
 
-  <!-- FACEBOOK -->
-  <meta property="fb:app_id" content="372862979453673">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<%= @site.url %>">
-  <meta property="og:title" content="<%= @conf.name %>">
-  <meta property="og:description" content="<%= @conf.description %>">
-  <meta property="og:image" content="<%= @getTheme() %>/img/badge.jpg">
-  <!-- / FACEBOOK -->
+	<!-- Output DocPad produced meta elements -->
+	<%- @getBlock('meta').toHTML() %>
 
-  <link rel="shortcut icon" href="<%= @getTheme() %>/img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
 
-  <!-- STYLES -->
-  <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
-  <!-- / STYLES -->
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 </head>
-<body>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="/"> <%= @site.title %></a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	<% for document in @getCollection('dcoumentsInMainNav').toJSON(): %>
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
+						<a href="<%= document.url %>" property="dc:title"><%= document.navtitle %></a>
+					</li>
+				<% end %>
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<%- @content %>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; <%= @site.company %> <%- (new Date()).getFullYear() %>
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	<% for document in @getCollection('pages').toJSON(): %>
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
+							<a href="<%= document.url %>" property="dc:title"><%= document.navtitle %></a>
+						</li>
+					<% end %>
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
 
-  <div class="global">
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
 
-    <%-@partial('nav.html.eco', @)%>
-    <%-@partial('header.html.eco', @)%>
-
-    <!-- CONTENT -->
-    <div class="content" id="content">
-      <div class="wrapper">
-        <%- @content %>
-        <!-- FOOTER -->
-        <footer class="footer">
-          <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
-        </footer>
-        <!-- / FOOTER -->
-      </div>
-    </div>
-    <!-- / CONTENT -->
-
-  </div>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<%= @getTheme() %>/js/jquery-1.8.3.min.js"><\/script>')</script>
-  <script src="<%= @getTheme() %>/js/main.js"></script>
-
-  <% if @conf.address != '': %>
-  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script src="<%= @getTheme() %>/js/map.js"></script>
-  <% end %>
-
-  <!-- GOOGLE ANALYTICS -->
-  <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '<%= @site.googleanalytics %>']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-  </script>
-  <!-- /GOOGLE ANALYTICS -->
-
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 </body>
 </html>

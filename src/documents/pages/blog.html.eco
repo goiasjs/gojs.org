@@ -1,0 +1,16 @@
+---
+title: Blog
+layout: page
+
+pageOrder: 3
+includenInNavs: ['main']
+navtitle: Blog
+---
+
+<nav class="linklist">
+	<% for document in @getCollection('posts').toJSON(): %>
+		<li><span><%= document.date.toDateString() %></span>
+		&raquo;
+		<a href="<%= document.url %>"><%= document.title %></a></li>
+	<% end %>
+</nav>

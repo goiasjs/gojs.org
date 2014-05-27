@@ -1,0 +1,68 @@
+
+$base-font-size: 106.25% !default; //17px
+$base-line-height: 1.5; //29.7
+
+// This is the default html and body font-size for the base em value.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base: 16px !default;
+
+// Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+// Change whether or not you include browser prefixes
+// $experimental: true;
+
+// Various global styles
+
+$default-float: left;
+
+
+////
+// STYLES
+$body-font-color: #444;
+$body-font-family: 'Maven Pro', sans-serif;
+$body-font-weight: 400;
+$body-font-style: normal;
+
+
+// Control whether or not CSS classes come through in the CSS files.
+// NOTE: you notice a lot of foundation assets are not included, since they're not needed for the template. 
+// You may include them if you want.
+// 
+$include-html-type-classes: false; //!! SHOULD BE FALSE, WHEN USING '_typography.scss'
+$include-html-button-classes: false;
+$include-html-form-classes:false;
+$include-html-custom-form-classes: false;
+$include-html-media-classes:false;
+$include-html-section-classes:false;
+$include-html-orbit-classes: false;
+$include-html-reveal-classes:false;
+$include-html-joyride-classes:false;
+$include-html-clearing-classes:false;
+$include-html-alert-classes:false;
+$include-html-nav-classes: false;
+$include-html-label-classes:false;
+$include-html-panel-classes: false;
+$include-html-pricing-classes:false;
+$include-html-progress-classes: false;
+$include-html-magellan-classes: false;
+$include-html-tooltip-classes: false;
+
+
+// Media Queries
+
+$small-screen: 768px;
+$medium-screen: 1280px;
+$large-screen: 1440px;
+
+$screen: "only screen";
+$small: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
