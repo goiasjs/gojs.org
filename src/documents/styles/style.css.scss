@@ -45,7 +45,6 @@ header{
 
 	&.tall{
 		padding: 4.5em 0;
-   		@include box-shadow(inset 0 1px 10px $backColDarkGrad);
         background-image: url('../img/cover.jpg');
 
    		@media #{$small} {

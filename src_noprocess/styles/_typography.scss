@@ -3,7 +3,7 @@
 // NOTE: THIS IS A MODIFIED VERSION OF ZURB FOUNDATION 4 _TYPE.SCSS
 // IF YOU USE THIS, PLEASE BE SURE THAT $include-html-type-classes = false
 // WHICH MAKES SURE THAT THE STYLES OF SAID INCLUDED FILE ARE NOT LOADED.
-// 
+//
 
 //
 // Typography Variables
@@ -421,7 +421,7 @@ blockquote p {
 }
 
 @media #{$small} {
-  
+
   h1 { font-size: $h1-font-size; margin-bottom: 0.428571em} //24 + 56 = 80 = 5em
   h2 { font-size: $h2-font-size; margin-bottom: 0.333333em} //12 + 36 = 64 = 3em
   h3 { font-size: $h3-font-size; margin-bottom: 0}          //0  + 32 = 32 = 2em
@@ -443,7 +443,6 @@ blockquote p {
     * {
       background: transparent !important;
       color: #000 !important; /* Black prints faster: h5bp.com/s */
-      box-shadow: none !important;
       text-shadow: none !important;
     }
 
