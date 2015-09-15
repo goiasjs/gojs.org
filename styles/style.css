@@ -1,0 +1,76 @@
+html, body {
+  height: 100%; }
+
+#layout {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -4em; }
+  #layout #layout_footer {
+    height: 4em; }
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 4em; }
+
+#layout {
+  overflow: auto; }
+
+.container.top-bar {
+  margin-bottom: 0; }
+  .container.top-bar .top-bar-section {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    .container.top-bar .top-bar-section li a:not(.button):hover, .container.top-bar .top-bar-section li.active a:not(.button) {
+      background: #222; }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+header {
+  padding: 1.5em 0;
+  background: #3790ff;
+  margin-bottom: 2em; }
+  header.tall {
+    padding: 4.5em 0;
+    background-image: url("../img/cover.jpg"); }
+    @media only screen and (min-width: 768px) {
+      header.tall {
+        padding: 5.5em 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; } }
+  header img {
+    margin: 0 auto; }
+
+section {
+  margin-bottom: 1.5em; }
+
+article {
+  margin: 2em 0; }
+  article > header:first-child {
+    margin-top: -2em; }
+    article > header:first-child h1 {
+      color: white; }
+
+#footer {
+  padding-top: 1em;
+  color: white;
+  background: #3790ff; }
+  #footer div, #footer li {
+    line-height: 1.5em; }
+  #footer .foot-right a {
+    color: white; }
+    #footer .foot-right a:hover {
+      text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    #footer .foot-right {
+      float: right; }
+      #footer .foot-right li {
+        float: right; } }
+
+.faqpost-content {
+  max-width: 45em; }

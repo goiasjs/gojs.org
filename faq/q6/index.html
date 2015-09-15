@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Quick Start from a Pre-Made Website (to check rendering) | Acme</title>
+	<meta name="description" content="When your website appears in search results in say Google, the text here will be shown underneath your website's title." />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+	<meta name="author" content="Your Name" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.66.0" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Styles -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'>
+	<link  rel="stylesheet" href="/styles/zurb-foundation.css" /><link  rel="stylesheet" href="/styles/style.css" /><link  rel="stylesheet" href="/styles/highlightjs-github.css" />
+
+</head>
+<body >
+	<div id='layout'>
+	    <nav class="container top-bar" style="">
+	        <ul class=" title-area">
+	          <li class="name">
+	            <h1><a href="/"> Acme</a></h1>
+	          </li>
+	          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	        </ul>  
+	        <section class="top-bar-section">
+	          <ul class="right">
+	          	
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/about" class="">
+						<a href="/pages/about" property="dc:title">About</a>
+					</li>
+				
+	          	<li class="divider hide-for-small"></li>
+					<li typeof="sioc:Page" about="/pages/blog" class="">
+						<a href="/pages/blog" property="dc:title">Blog</a>
+					</li>
+				
+	          </ul>
+	        </section>
+	    </nav>
+		<div role="main">
+			<article id="page" class="page">
+	
+
+
+	<div class="row">
+		<div class="columns faqpost-content">
+
+			<h1>Quick Start from a Pre-Made Website (to check rendering)</h1>
+			
+
+			<p>From <a href="https://github.com/bevry/docpad-documentation/blob/master/01-start/02-start.html.md">https://github.com/bevry/docpad-documentation/blob/master/01-start/02-start.html.md</a></p>
+<p>If you want to use one of our <a href="/docpad/skeletons">pre-made websites</a> websites to get up and running real quickly, just run the following:</p>
+<pre class="highlight"><code class="hljs bash">mkdir my-website
+<span class="hljs-built_in">cd</span> my-website
+docpad run
+</code></pre>
+<p>This will ask you which pre-made website you&#39;d like to use (or even if you don&#39;t want to use one). Once you&#39;ve picked one, we&#39;ll clone it out into the current working directory, generate it, watch for changes, and fire up our inbuilt webserver for the website at <a href="http://localhost:9778/">http://localhost:9778/</a> so you can see your website right away! How awesome!</p>
+<h2 id="quick-start-from-scratch">Quick Start from Scratch</h2>
+<p>If you&#39;d rather get your hands dirty by making your own real basic website from scratch, here&#39;s the steps:</p>
+<ol>
+<li><p>Create a directory for your website, get inside of it, and initialize an empty docpad project:</p>
+<pre class="highlight"><code class="hljs bash"> mkdir my-website
+ <span class="hljs-built_in">cd</span> my-website
+ docpad init
+</code></pre>
+</li>
+<li><p>Install the <a href="http://docpad.org/plugin/eco">Eco</a> and <a href="http://docpad.org/plugin/marked">Marked</a> rendering plugins:</p>
+<pre class="highlight"><code class="hljs bash"> docpad install eco,marked
+</code></pre>
+</li>
+<li><p>Create the following files:</p>
+<ol>
+<li><p>A layout at <code>src/layouts/default.html.eco</code> that contains:</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="vbscript">&lt;%= @document.title %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+     <span class="vbscript">&lt;%- @getBlock(<span class="hljs-string">"meta"</span>).toHTML() %&gt;</span>
+     <span class="vbscript">&lt;%- @getBlock(<span class="hljs-string">"styles"</span>).toHTML() %&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="vbscript">&lt;%- @content %&gt;</span>
+     <span class="vbscript">&lt;%- @getBlock(<span class="hljs-string">"scripts"</span>).toHTML() %&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Another layout at <code>src/layouts/post.html.eco</code> that contains:</p>
+<pre class="highlight"><code class="hljs xml"> ---
+ layout: default
+ ---
+ <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="vbscript">&lt;%= @document.title %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span><span class="vbscript">&lt;%- @content %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>A document at <code>src/documents/posts/hello.html.md</code> that contains:</p>
+<pre class="highlight"><code class="hljs xml"> ---
+ layout: post
+ title: Hello World!
+ ---
+ Hello **World!**
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>Then when you generate your website by running <code>docpad run</code></p>
+<ol>
+<li><p>You will get a html file at <code>out/posts/hello.html</code> that contains:</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Hello <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>World!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>And any files inside the <code>src/files</code> directory will be copied to the <code>out</code> directory. E.g. <code>src/files/styles/style.css</code> -&gt; <code>out/styles/style.css</code></p>
+</li>
+</ol>
+</li>
+<li><p>Awesome. Now how did the <code>&lt;%=...%&gt;</code> and <code>&lt;%-...%&gt;</code> parts get substituted away?</p>
+<ol>
+<li><p>This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called <a href="https://github.com/sstephenson/eco">Eco</a> (hence the <code>.eco</code> extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:</p>
+<pre class="highlight"><code class="hljs xml"> <span class="vbscript">&lt;% <span class="hljs-keyword">for</span> post <span class="hljs-keyword">in</span> @getFilesAtPath(<span class="hljs-string">"posts"</span>).toJSON(): %&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= post.url %&gt;"</span>&gt;</span><span class="vbscript">&lt;%= post.title %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>/&gt;</span>
+ <span class="vbscript">&lt;% <span class="hljs-keyword">end</span> %&gt;</span>
+</code></pre>
+</li>
+<li><p>The <code>@getBlock</code> stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the <a href="http://docpad.org/plugin/livereload">livereload plugin</a> in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the <code>&lt;%- @getBlock(&quot;scripts&quot;).toHTML() %&gt;</code> in our layout :)</p>
+</li>
+</ol>
+</li>
+<li><p>Cool. Now how did <code>Hello **World!**</code> in our document get converted into <code>Hello &lt;strong&gt;World!&lt;/strong&gt;</code>?</p>
+<ol>
+<li>That was possible as that file was a <a href="http://daringfireball.net/projects/markdown/basics">Markdown</a> file (hence the <code>.md</code> extension it had). Markdown is fantastic for working with text based documents, as it really allows you to focus in on your content instead of the syntax for formatting the document!</li>
+</ol>
+</li>
+<li><p>Fantastic! Thanks for that! Continue on with the guide to learn a lot more, as this was just the tip of the ice berg - there&#39;s a lot more opt-in awesomeness yet to be discovered.</p>
+</li>
+</ol>
+
+			<p>
+				<a href="/pages/faq">&#171; Back to all questions </a>
+			</p>
+		</div>
+	</div>
+</article>
+		</div>
+	    <div id='layout_footer'></div>
+	</div>
+	<footer id='footer' class="panel">
+		<div class="row">
+			<div class="columns large-5 small-12">
+			&copy; Acme Inc. 2014
+			</div>
+			<div class="columns large-7 small-12 ">
+				<ul class="inline-list foot-right">
+		          	
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/about" class="">
+							<a href="/pages/about" property="dc:title">About</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/faq" class="">
+							<a href="/pages/faq" property="dc:title">FAQ</a>
+						</li>
+					
+		          	<li class="divider hide-for-small"></li>
+						<li typeof="sioc:Page" about="/pages/blog" class="">
+							<a href="/pages/blog" property="dc:title">Blog</a>
+						</li>
+					
+		        </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- Scripts -->
+
+	<!-- Depending on browser support load the zepto-pack or the jquery-pack. 
+		As configured (see grunt-config.json) this includes: 
+		 - modernizr, 
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from: 
+		http://foundation.zurb.com/docs/javascript.html
+	-->
+	<script>
+	  document.write('<script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js><\/script>');
+	</script>
+	<script>
+		//init all foundation plugins. 
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	</script>
+	<script defer="defer"  src="/scripts/app.js"></script>
+</body>
+</html>

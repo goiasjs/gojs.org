@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>GOJS - Home</title>
+	<link href="http://gojs.org/atom.xml" rel="self"/>
+	<link href="http://gojs.org"/>
+	<updated>2015-09-15T13:04:40.422Z</updated>
+	<id>http://gojs.org</id>
+	<author>
+		<name>Luiz Gonzaga dos Santos Filho</name>
+		<email>lfilho@gmail.com</email>
+	</author>
+
+	
+		<entry>
+			<title>1ª Edição do 7min.js</title>
+			<link href="http://gojs.org//posts/1-edicao-do-7minjs"/>
+			<updated>2015-09-15T13:02:11.000Z</updated>
+			<id>http://gojs.org//posts/1-edicao-do-7minjs</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;1ª Edição do 7min.js | GOJS - Home&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Fomentando o Javascript moderno no estado de Goiás.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;javascript, node, js, ecmascript, goiás&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Luiz Gonzaga dos Santos Filho&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.78.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;/&quot;&gt; GOJS - Home&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;1ª Edição do 7min.js&lt;/h1&gt;
+			&lt;p&gt;
+Na próxima Quarta-feira (16/09) acontecerá nosso primeiro 7min.js:
+&lt;/p&gt;
+
+&lt;p&gt;
+São palestras rápidas de no máximo 7 minutos.
+&lt;/p&gt;
+
+&lt;p&gt;
+Vagas limitas!! Faça sua inscrição em &lt;a href=&quot;http://even.tc/gojs-7minjs&quot;&gt;http://even.tc/gojs-7minjs&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Meteor.js - Luiz Gonzaga&lt;/li&gt;
+&lt;li&gt;Grao.js - Marcelo Fleury&lt;/li&gt;
+&lt;li&gt;Promises - Igor Vieira&lt;/li&gt;
+&lt;li&gt;RxJS - Edygar Oliveira&lt;/li&gt;
+&lt;li&gt;Fortune.js - Jean Lucas&lt;/li&gt;
+&lt;li&gt;Google Tag Manager - Sóstenes Gomes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Haverá espaço para breves perguntas e respostas e networking.
+&lt;/p&gt;
+
+&lt;p&gt;
+Local: DataEasy Tecnologia e Serviços
+&lt;/p&gt;
+&lt;p&gt;
+Mapa: &lt;a href=&quot;https://www.google.com.br/maps/place/DataEasy/@-16.6854198,-49.2741883,19.88z/data=!4m2!3m1!1s0x0000000000000000:0x7ff094ba7341248c&quot;&gt;veja aqui&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Hora: 18h40. Tolerância máxima para início: 18h50.
+&lt;/p&gt;
+
+&lt;p&gt;
+Vagas limitas!! Faça sua inscrição em &lt;a href=&quot;http://even.tc/gojs-7minjs&quot;&gt;http://even.tc/gojs-7minjs&lt;/a&gt;
+&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+			&amp;copy; GOJS - Grupo de Usuários Javascript de Goiás 2015
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack.
+		As configured (see grunt-config.json) this includes:
+		 - modernizr,
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from:
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins.
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>GOJS no Join Community</title>
+			<link href="http://gojs.org//posts/gojs-no-join-community"/>
+			<updated>2014-05-27T19:54:39.000Z</updated>
+			<id>http://gojs.org//posts/gojs-no-join-community</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;GOJS no Join Community | GOJS - Home&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Fomentando o Javascript moderno no estado de Goiás.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;javascript, node, js, ecmascript, goiás&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Luiz Gonzaga dos Santos Filho&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.78.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;/&quot;&gt; GOJS - Home&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;GOJS no Join Community&lt;/h1&gt;
+			&lt;p&gt;No próximo final de semana (30 e 31/05/2014), acontece o &lt;a href=&quot;http://joincommunity.com.br/&quot;&gt;Join Community&lt;/a&gt; e o GOJS, bem como o pessoal do Node.js Goiás, terão integrantes palestrando e divulgando o Javascript.&lt;/p&gt;
+&lt;p&gt;Não deixem de prestigiar. As inscrições podem ser feitas no link acima.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://joincommunity.com.br/img/divulgacao.jpg&quot; alt=&quot;Divulgação&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Nos vemos lá!&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+			&amp;copy; GOJS - Grupo de Usuários Javascript de Goiás 2015
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack.
+		As configured (see grunt-config.json) this includes:
+		 - modernizr,
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from:
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins.
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+		<entry>
+			<title>Inaugurando versão 2.0 do site</title>
+			<link href="http://gojs.org//posts/inaugurando-versao-2-do-site"/>
+			<updated>2014-05-27T19:54:39.000Z</updated>
+			<id>http://gojs.org//posts/inaugurando-versao-2-do-site</id>
+			<content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;pt&quot;&gt;
+&lt;head&gt;
+	&lt;!-- Meta --&gt;
+	&lt;meta charset=&quot;utf-8&quot; /&gt;
+	&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+
+	&lt;!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/i/378 --&gt;
+	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+
+	&lt;!-- Our site title and description --&gt;
+	&lt;title&gt;Inaugurando versão 2.0 do site | GOJS - Home&lt;/title&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Fomentando o Javascript moderno no estado de Goiás.&quot; /&gt;
+	&lt;meta name=&quot;keywords&quot; content=&quot;javascript, node, js, ecmascript, goiás&quot; /&gt;
+	&lt;meta name=&quot;author&quot; content=&quot;Luiz Gonzaga dos Santos Filho&quot; /&gt;
+
+	&lt;!-- Output DocPad produced meta elements --&gt;
+	&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.78.3&quot; /&gt;
+
+	&lt;!-- Mobile viewport optimized: h5bp.com/viewport --&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	&lt;!-- Icons --&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;icons/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+
+	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+		&lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro' rel='stylesheet' type='text/css'&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/zurb-foundation.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/highlightjs-github.css&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body &gt;
+	&lt;div id='layout'&gt;
+	    &lt;nav class=&quot;container top-bar&quot; style=&quot;&quot;&gt;
+	        &lt;ul class=&quot; title-area&quot;&gt;
+	          &lt;li class=&quot;name&quot;&gt;
+	            &lt;h1&gt;&lt;a href=&quot;/&quot;&gt; GOJS - Home&lt;/a&gt;&lt;/h1&gt;
+	          &lt;/li&gt;
+	          &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	        &lt;/ul&gt;
+	        &lt;section class=&quot;top-bar-section&quot;&gt;
+	          &lt;ul class=&quot;right&quot;&gt;
+	          	
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+					&lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+						&lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+					&lt;/li&gt;
+				
+	          &lt;/ul&gt;
+	        &lt;/section&gt;
+	    &lt;/nav&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;columns post-content&quot;&gt;
+			&lt;h1&gt;Inaugurando versão 2.0 do site&lt;/h1&gt;
+			&lt;p&gt;Este post inaugura a nova versão do nosso site. Migramos do ConfBoilerplate para o DocPad puro, de forma que pudéssemos sair da estrutura de um &amp;quot;evento&amp;quot; e ficar com algo que nos atenda melhor (páginas e blog).&lt;/p&gt;
+&lt;p&gt;Como sempre, contribuições são bem vindas: o site todo está no &lt;a href=&quot;https://github.com/goiasjs&quot;&gt;nosso github&lt;/a&gt;.&lt;/p&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+	
+&lt;/div&gt;
+		&lt;/div&gt;
+	    &lt;div id='layout_footer'&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;footer id='footer' class=&quot;panel&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+			&amp;copy; GOJS - Grupo de Usuários Javascript de Goiás 2015
+			&lt;/div&gt;
+			&lt;div class=&quot;columns large-6 small-12&quot;&gt;
+				&lt;ul class=&quot;inline-list foot-right&quot;&gt;
+		          	
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/sobre&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/sobre&quot; property=&quot;dc:title&quot;&gt;Sobre&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/canais&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/canais&quot; property=&quot;dc:title&quot;&gt;Canais&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/faq&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/faq&quot; property=&quot;dc:title&quot;&gt;FAQ&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		          	&lt;li class=&quot;divider hide-for-small&quot;&gt;&lt;/li&gt;
+                    &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/blog&quot; class=&quot;&quot;&gt;
+                        &lt;a href=&quot;/pages/blog&quot; property=&quot;dc:title&quot;&gt;Blog&lt;/a&gt;
+                    &lt;/li&gt;
+					
+		        &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+	&lt;!-- Scripts --&gt;
+
+	&lt;!-- Depending on browser support load the zepto-pack or the jquery-pack.
+		As configured (see grunt-config.json) this includes:
+		 - modernizr,
+		 - zepto OR jquery
+		 - foundation.topbar.js
+
+		condition jquery or zepto adapted from:
+		http://foundation.zurb.com/docs/javascript.html
+	--&gt;
+	&lt;script&gt;
+	  document.write('&lt;script src=/scripts/'
+	    + ('__proto__' in {} ? 'zepto' : 'jquery')
+	    + '-pack.min.js&gt;&lt;\/script&gt;');
+	&lt;/script&gt;
+	&lt;script&gt;
+		//init all foundation plugins.
+		//Currently this only includes foundation.topbar.js
+		//See http://foundation.zurb.com/docs/javascript.html
+		$(document).foundation();
+	&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+		</entry>
+	
+</feed>
