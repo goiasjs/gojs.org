@@ -40,7 +40,8 @@
     "safeps": "~6.0.0"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.0"
+    "docpad-plugin-livereload": "~2.6.0",
+    "foundation": "^4.2.1-1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
