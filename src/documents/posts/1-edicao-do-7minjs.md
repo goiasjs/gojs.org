@@ -12,6 +12,10 @@ Na próxima Quarta-feira (16/09) acontecerá nosso primeiro 7min.js:
 São palestras rápidas de no máximo 7 minutos.
 </p>
 
+<p>
+Vagas limitas!! Faça sua inscrição em <a href="http://even.tc/gojs-7minjs">http://even.tc/gojs-7minjs</a>
+</p>
+
 <ul>
 <li>Meteor.js - Luiz Gonzaga</li>
 <li>Grao.js - Marcelo Fleury</li>
@@ -34,3 +38,8 @@ Mapa: <a href="https://www.google.com.br/maps/place/DataEasy/@-16.6854198,-49.27
 <p>
 Hora: 18h40. Tolerância máxima para início: 18h50.
 </p>
+
+<p>
+Vagas limitas!! Faça sua inscrição em <a href="http://even.tc/gojs-7minjs">http://even.tc/gojs-7minjs</a>
+</p>
+
